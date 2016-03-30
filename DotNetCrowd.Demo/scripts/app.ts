@@ -1,5 +1,5 @@
 ﻿/// <reference path='../typings/jquery/jquery.d.ts' />
-/// <reference path='../typings/tsd.d.ts' />
+/// <reference path='../typings/vss.d.ts' />
 
 import VssService = require("VSS/Service");
 import TfsWitApi = require("TFS/WorkItemTracking/RestClient");
@@ -206,7 +206,7 @@ module TechCamp.Demo {
                 }
                 return true;
             };
-            authTokenManager.getToken().then(getHeader).then(addTask);
+            authTokenManager.getAuthToken().then(getHeader).then(addTask);
 
         }
     }
