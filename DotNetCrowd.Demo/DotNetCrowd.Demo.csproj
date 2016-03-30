@@ -58,12 +58,12 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="scripts\app.ts" />
-    <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
-    <TypeScriptCompile Include="typings\q\q.d.ts" />
-    <TypeScriptCompile Include="typings\knockout\knockout.d.ts" />
-    <TypeScriptCompile Include="typings\rmo.d.ts" />
-    <TypeScriptCompile Include="typings\tfs.d.ts" />
-    <TypeScriptCompile Include="typings\vss.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\q\q.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\knockout\knockout.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\rmo.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\tfs.d.ts" />
+    <TypeScriptCompile Include="scripts\typings\vss.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="vss-extension.internal.json" />

@@ -1,5 +1,5 @@
-﻿/// <reference path='../typings/jquery/jquery.d.ts' />
-/// <reference path='../typings/vss.d.ts' />
+﻿/// <reference path='typings/jquery/jquery.d.ts' />
+/// <reference path='typings/vss.d.ts' />
 
 import VssService = require("VSS/Service");
 import TfsWitApi = require("TFS/WorkItemTracking/RestClient");
