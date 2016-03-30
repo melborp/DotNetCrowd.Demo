@@ -58,6 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="scripts\app.ts" />
+    <TypeScriptCompile Include="typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="typings\q\q.d.ts" />
+    <TypeScriptCompile Include="typings\knockout\knockout.d.ts" />
     <TypeScriptCompile Include="typings\rmo.d.ts" />
     <TypeScriptCompile Include="typings\tfs.d.ts" />
     <TypeScriptCompile Include="typings\vss.d.ts" />
