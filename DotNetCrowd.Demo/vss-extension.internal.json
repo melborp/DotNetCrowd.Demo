@@ -1,0 +1,10 @@
+{
+  "id": "lambda-vsts-extension-demo-internal",
+  "name": "VSTS demo extension (Internal)",
+
+  "publisher": "melborp-vso",
+
+  "baseUri": null,
+
+  "public": false
+}

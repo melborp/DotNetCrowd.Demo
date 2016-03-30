@@ -1,0 +1,97 @@
+{
+  "manifestVersion": 1,
+  "version": "1.0.0",
+  "scopes": [ "vso.work", "vso.work_write" ],
+  "description": "This will allow generation of work items based on PBI description.",
+
+  "icons": {
+    "default": "img/logo.png"
+  },
+  "tags": [
+    "Productivity",
+    "Task generation"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "links": {
+    "home": {
+      "uri": "https://github.com/melborp/DotNetCrowd.Demo"
+    },
+    "support": {
+      "uri": "https://github.com/melborp/DotNetCrowd.Demo"
+    },
+    "repository": {
+      "uri": "https://github.com/melborp/DotNetCrowd.Demo"
+    },
+    "issues": {
+      "uri": "https://github.com/melborp/DotNetCrowd.Demo/issues"
+    }
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+  "contributions": [
+    {
+      "id": "generate-tasks-from-pbi-description-button",
+      "type": "ms.vss-web.action",
+      "description": "Generate tasks",
+      "targets": [
+        "ms.vss-work-web.work-item-toolbar-menu"
+      ],
+      "properties": {
+        "text": "Gen. Tasks",
+        "title": "Gen. Tasks for PBI",
+        "toolbarText": "Gen. Tasks",
+        "icon": "img/ZoomIn.png",
+        "group": "actions",
+        "uri": "action.html",
+        "registeredObjectId": "generate-tasks-from-pbi-description-button"
+      }
+    },
+    {
+      "id": "generate-tasks-from-pbi-dialog",
+      "type": "ms.vss-web.control",
+      "targets": [ ".controls" ],
+      "properties": {
+        "uri": "index.html"
+      }
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "readme.md"
+    },
+    "license": {
+      "path": "LICENSE.txt"
+    }
+  },
+  "files": [
+    {
+      "path": "scripts",
+      "addressable": true
+    },
+    {
+      "path": "img",
+      "addressable": true
+    },
+    {
+      "path": "css",
+      "addressable": true
+    },
+    {
+      "path": "action.html",
+      "addressable": true
+    },
+    {
+      "path": "index.html",
+      "addressable": true
+    }
+  ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ]
+}
