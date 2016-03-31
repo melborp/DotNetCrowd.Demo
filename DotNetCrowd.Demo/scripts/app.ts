@@ -36,7 +36,7 @@ module TechCamp.Demo {
                 var internalTasks = new Array();
                 //parse description into tasks
                 var description = wit.fields["System.Description"];
-                description = description.replace(/<p>/g, "").replace(/<\/p>/g, "");
+                description = description.replace(/<p>/g, "").replace(/<\/p>/g, "").replace(/<div>/g, "").replace(/<\/div>/g, "");;
 
                 var taskLines = description.split("<br>");
                 taskLines.forEach((taskLine) => {
