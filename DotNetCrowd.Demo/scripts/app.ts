@@ -159,7 +159,7 @@ module TechCamp.Demo {
                     {
                         "op": "add",
                         "path": "/fields/System.History",
-                        "value": "Auto generated task from PBI"
+                        "value": "Auto generated task from PBI from DotNetCrowd"
                     },
                     {
                         "op": "add",
