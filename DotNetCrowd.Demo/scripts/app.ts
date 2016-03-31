@@ -48,18 +48,17 @@ module TechCamp.Demo {
 
                 //Process relations to see if any task has been already added
                 var processRelations = (witRelations) => {
-                    if (witRelations.relations == null && internalTasks.length === 0) {
-                        return witRelations;
-                    }
                     var workItemIds = new Array();
 
-                    //Extract the work item ids from related items
-                    for (var i = 0; i < witRelations.relations.length; i++) {
-                        //TODO: also check that type is Task
-                        var tempId = witRelations.relations[i].url.match("[^/]+$");
-                        if (self.getLinkTypeName(witRelations.relations[i].rel) === "Child") {
-                            var relatedWorkItemId = tempId[0];
-                            workItemIds.push(relatedWorkItemId);
+                    if (witRelations.relations != null) {
+                        //Extract the work item ids from related items
+                        for (var i = 0; i < witRelations.relations.length; i++) {
+                            //TODO: also check that type is Task
+                            var tempId = witRelations.relations[i].url.match("[^/]+$");
+                            if (self.getLinkTypeName(witRelations.relations[i].rel) === "Child") {
+                                var relatedWorkItemId = tempId[0];
+                                workItemIds.push(relatedWorkItemId);
+                            }
                         }
                     }
 
