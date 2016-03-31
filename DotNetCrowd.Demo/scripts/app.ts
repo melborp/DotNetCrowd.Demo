@@ -48,7 +48,7 @@ module TechCamp.Demo {
 
                 //Process relations to see if any task has been already added
                 var processRelations = (witRelations) => {
-                    if (witRelations.relations == null) {
+                    if (witRelations.relations == null && internalTasks.length === 0) {
                         return witRelations;
                     }
                     var workItemIds = new Array();
