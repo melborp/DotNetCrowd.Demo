@@ -36,12 +36,12 @@ module TechCamp.Demo {
                 var internalTasks = new Array();
                 //parse description into tasks
                 var description = wit.fields["System.Description"];
-                description = description.replace(/<p>/g, "").replace(/<\/p>/g, "").replace(/<div>/g, "").replace(/<\/div>/g, "").replace(/&quot;/g, "");
+                description = description.replace(/<p>/g, "").replace(/<\/p>/g, "").replace(/<div>/g, "").replace(/<\/div>/g, "");
 
                 var taskLines = description.split("TASK ");
                 taskLines.forEach((taskLine) => {
                     if (taskLine !== "") {
-                        var title = taskLine;
+                        var title = taskLine.replace(/&quot;/g, "");
                         internalTasks.push({ title: title, parentId: wit.id });
                     }
                 });
